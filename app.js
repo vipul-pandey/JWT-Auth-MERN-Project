@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5500;
 
 app.use(cookieParser())
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin:['http://localhost:3000', 'https://securedatabase.herokuapp.com'],
     credentials: true,
     optionSuccessStatus: 20
 }))

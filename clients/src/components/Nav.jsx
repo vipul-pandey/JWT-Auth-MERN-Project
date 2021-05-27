@@ -12,8 +12,6 @@ const Nav = (props) => {
         props.setName(" ");
     }
     let menu;
-    // console.log(props.name)
-    // console.log(props.setName)
     if (props.name !== undefined) {
         menu = (
             <ul className="navbar-nav ml-auto">

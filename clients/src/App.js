@@ -15,7 +15,7 @@ function App() {
   const [type, setType] = useState();
 
   const getdataout = async () => {
-    const res = await fetch('http://localhost:5500/api/users', {
+    const res = await fetch('/api/users', {
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
     });

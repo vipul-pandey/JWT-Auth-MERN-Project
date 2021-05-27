@@ -74,7 +74,7 @@ const Professor = () => {
   }, []);
 
   const getAllinputField = () => {
-    axios.get('api/student_list', inputField)
+    axios.get('/api/student_list', inputField)
      .then((res) => setInputField(res.data))
       // .then((res) => console.log(res.data))
       .catch((err) => { console.log('error aa gya') });

@@ -286,7 +286,7 @@ hr{
         width: 80%;
         padding: 3px 1px;
         margin: 5px 0;
-        font-family: cursive;
+        font-family: 'Lato', Calibri, Arial, sans-serif;
         border: 1px solid #330033;
         background:none;
     }
