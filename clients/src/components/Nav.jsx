@@ -16,7 +16,7 @@ const Nav = (props) => {
         menu = (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <Link className="nav-link" to='/signin' onClick={logout} >LOGOUT</Link>
+                    <Link className="nav-link" to='/' onClick={logout} >LOGOUT</Link>
                 </li>
             </ul>
         )
