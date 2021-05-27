@@ -7,7 +7,7 @@ const Update = () => {
 
     let { id } = useParams();
     const getInputField = () => {
-        axios.get(`http://localhost:5500/api/student_list/${id}`)
+        axios.get(`/api/student_list/${id}`)
             .then((res) => { setInputField(res.data) })
             .catch(() => { console.log("error aa rha h") })
     }
@@ -22,7 +22,7 @@ const Update = () => {
 
     const postMarks = (e) => {
         e.preventDefault();
-        axios.patch(`http://localhost:5500/api/student_list/${id}`, inputField)
+        axios.patch(`/api/student_list/${id}`, inputField)
         .then(() => alert('Marks submitted sucessfully'))
         .catch((error) => console.log(error.message));
     };

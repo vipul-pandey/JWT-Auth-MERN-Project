@@ -3,7 +3,7 @@ import learning from './img/learning.png';
 import { Link } from 'react-router-dom';
 const Nav = (props) => {
     const logout = async () => {
-        await fetch('http://localhost:5500/api/logout', {
+        await fetch('api/logout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include'

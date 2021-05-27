@@ -11,7 +11,7 @@ const Student = () => {
     useEffect(() => {
         (
             async () => {
-                const res = await fetch('http://localhost:5500/api/users', {
+                const res = await fetch('api/users', {
                     headers: { 'Content-Type': 'application/json' },
                     credentials: 'include',
                 });

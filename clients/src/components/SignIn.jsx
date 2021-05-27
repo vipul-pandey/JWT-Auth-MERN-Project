@@ -8,7 +8,7 @@ const SignIn = (props) => {
 
     const submit_sigin = async (e) => {
         e.preventDefault();
-        const res = await fetch('http://localhost:5500/api/signin', {
+        const res = await fetch('api/signin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include',
